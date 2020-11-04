@@ -8,3 +8,139 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
     display:block;
 }
 
+/* Colors
+NAVY #00506d
+GRAY BLUE #6e97aa
+LIGHT BLUE #d3e0e5
+LIME GREEN #c6ba41
+DARK GREEN #5c8641
+ORANGE #dd671e */
+
+/*============================================
+*
+*         Fonts
+*
+*
+*===========================================*/
+
+body {
+	font-family: 'Manjari', sans-serif;
+	color: #100906;
+}
+
+h1 {
+	font-family:'Chango', cursive;
+	text-transform: uppercase;
+	color: #d3e0e5;
+	font-size: 2rem;
+	letter-spacing: 1px;
+
+}
+
+h2 {
+	font-family: 'Capriola', sans-serif;
+	color: #00506d;
+	padding-bottom: 5px;
+	text-transform: uppercase;
+}
+
+h3 {
+	color: #c6ba41;
+	padding-bottom: 5px;
+}
+
+p {
+	line-height: 20px;
+	font-weight: 400;
+}
+
+.orange {
+	color: #dd671e;
+	font-weight: bold;
+}
+
+.button {
+	background-color: #dd671e;
+  color: white;
+	font-weight: bold;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+	margin-top: 10px;
+	text-transform: uppercase;
+}
+
+
+
+section {
+	padding: 20px 2%;
+}
+
+footer {
+	background-color: #00506d;
+	color: #d3e0e5;
+	padding: 20px 2%;
+	text-align: center;
+}
+
+
+nav {
+	background-color: #00506d;
+	padding: 10px;
+}
+
+nav img {
+	margin: auto;
+	max-width: 200px;
+}
+
+nav ul a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #c6ba41;
+	padding: 0 20px;
+	font-size: 1.2rem;
+}
+
+nav ul {
+	display: flex;
+	list-style-type: none;
+	text-align:center;
+	justify-content: center;
+}
+
+nav a:hover {
+	  color: #d3e0e5;
+	}
+
+
+/*============================================
+*
+*         HOME
+*
+*
+*===========================================*/
+
+.hero {
+	text-align: center;
+	background-color: #00506d;
+	background-image: url(images/hero.jpg);
+	background-size: cover;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.home-about {
+	background-color: #d3e0e5;
+}
+
+.weather {
+	background-color: #c6ba41;
+	text-align: center;
+}
+
+.weather p {
+	color: #51436b;
+	font-weight: bold;
+}
