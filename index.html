@@ -16,12 +16,35 @@
 	</head>
 
 	<body>
+		<div id="container">
+
 		<header>
-			<nav>
+			<nav class="mobile">
 				<a href="index.html"><img src="images/logo.png" alt="venice urban forest logo" title="venice urban forest logo" /></a>
 				<ul>
 					<li><a href="index.html">Home</a></li>
-					<li><a href="forest.html">Forest</a></li>
+					<li class="main-menu-labels"><a href="forest.html">Forest</a>
+						<ul class="sub-menu hidden">
+              <li>about</li>
+              <li>volunteer</li>
+              <li>donate</li>
+            </ul>
+					</li>
+					<li><a href="visit.html">Visit</a></li>
+				</ul>
+			</nav>
+
+			<nav class="desktop">
+				<a href="index.html"><img src="images/logo.png" alt="venice urban forest logo" title="venice urban forest logo" /></a>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li class="main-menu-labels"><a href="forest.html">Forest</a>
+						<ul class="sub-menu hidden">
+              <li>about</li>
+              <li>volunteer</li>
+              <li>donate</li>
+            </ul>
+					</li>
 					<li><a href="visit.html">Visit</a></li>
 				</ul>
 			</nav>
@@ -29,40 +52,54 @@
 
 		<main>
 			<section class="hero">
-				<h1>Venice Urban Forest</h1>
+				<h1 class="hero-title">Venice Urban Forest</h1>
 			</section>
 
-			<section>
-				<h2>A Green Oasis</h2>
-				<h3>along the intracoastal</h3>
-				<p>
-					Urban forests, through planned connections of green
-					spaces, form the green infrastructure on which communities
-					depend. Green infrastructure works at multiple scales
-					from the neighborhood to the metro area to the regional
-					landscape Urban forests, through planned connections
-					of green spaces, form the green infrastructure on which
-					communities depend.
-				</p>
-				<a href="forest.html" class="button" target="_blank">Learn More</a>
+			<div>
+
+			<section class="intro">
+				<div class="blurb">
+					<h2>A Green Oasis</h2>
+					<h3>along the intracoastal</h3>
+					<p>
+						Urban forests, through planned connections of green
+						spaces, form the green infrastructure on which communities
+						depend. Green infrastructure works at multiple scales
+						from the neighborhood to the metro area to the regional
+						landscape Urban forests, through planned connections
+						of green spaces, form the green infrastructure on which
+						communities depend.
+					</p>
+					<a href="forest.html" class="button" target="_blank">Learn More</a>
+				</div>
+				<div>
+					<img class="plant-img" src="images/hand.jpg" alt="hand holding plant" title="hand holding plant" />
+				</div>
 			</section>
 
 			<section class="home-about">
 				<h2>About the Forest</h2>
-				<div>
-					<p class="orange">Along the Waterway</p>
-				</div>
-				<div>
-					<p class="orange">+300 Trees Planted</p>
-				</div>
-				<div>
-					<p class="orange">+50 Volunteers</p>
+
+				<div class="icon-section">
+					<div>
+						<img class="icons" src="images/trail.png" alt="trail and trees" title="trail and trees" />
+						<p class="orange">Along the Waterway</p>
+					</div>
+					<div>
+						<img class="icons" src="images/planting.png" alt="hand and plant" title="hand and plant" />
+						<p class="orange">+300 Trees Planted</p>
+					</div>
+					<div>
+						<img class="icons" src="images/garden.png" alt="plant tree" title="plant tree" />
+						<p class="orange">+50 Volunteers</p>
+					</div>
+
 				</div>
 			</section>
 
 			<section class="weather">
 				<h2>Ready to hike or bike?</h2>
-				<p>The weather today in Venice, FL is <span> </span></p>
+				<p>The weather today in Venice, FL is <span id="weather"></span>.</p>
 			</section>
 
 		</main>
@@ -71,9 +108,9 @@
 			<a href="index.html"><img src="images/logo.png" alt="venice urban forest logo" title="venice urban forest logo" /></a>
 			<p>941.207.8224</p>
 			<p>308 East Venice Ave. Venice, FL</p>
-
 		</footer>
 
+	</div>
 	<script src="js/main.js"></script>
 	</body>
 

@@ -63,7 +63,10 @@ p {
 	background-color: #dd671e;
   color: white;
 	font-weight: bold;
-  padding: 8px 12px;
+  padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 10px;
+	padding-bottom: 5px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -71,7 +74,9 @@ p {
 	text-transform: uppercase;
 }
 
-
+.button:hover {
+	background-color: #00506d;
+}
 
 section {
 	padding: 20px 2%;
@@ -84,10 +89,18 @@ footer {
 	text-align: center;
 }
 
+footer p {
+	line-height: 30px;
+}
+
+.desktop {
+	display: none;
+}
 
 nav {
 	background-color: #00506d;
 	padding: 10px;
+	text-align: center;
 }
 
 nav img {
@@ -108,11 +121,39 @@ nav ul {
 	list-style-type: none;
 	text-align:center;
 	justify-content: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 nav a:hover {
-	  color: #d3e0e5;
-	}
+	color: #d3e0e5;
+}
+
+/* SUB MENU */
+.sub-menu li {
+  padding: 10px;
+	font-size: 1.3rem;
+	color: #d3e0e5;
+}
+
+.sub-menu li:hover {
+	color: #c6ba41;
+}
+
+/* HIDDEN Sub Menu */
+.hidden {
+  height: 0;
+  overflow: hidden;
+  transition: all 1s ease-out;
+	display:block;
+}
+
+/* SHOW Sub Menu */
+.show {
+  height: 7rem;
+  transition: all 1s ease-in;
+	display:block;
+}
 
 
 /*============================================
@@ -131,10 +172,42 @@ nav a:hover {
 	padding-bottom: 80px;
 }
 
+/* INTRO SECTION */
 .home-about {
 	background-color: #d3e0e5;
 }
 
+.home-about h2 {
+	text-align: center;
+}
+
+.home-about p {
+	text-align: center;
+}
+
+.plant-img {
+	/* max-width: 300px; */
+	width: 100%;
+	padding-top: 10px;
+}
+
+/* ICON SECTION */
+.icons {
+	max-width: 100px;
+	margin: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.icons:hover {
+	transform: scale(1.2);
+}
+
+.icon-section {
+	text-align: center;
+}
+
+/* WEATHER SECTION */
 .weather {
 	background-color: #c6ba41;
 	text-align: center;
@@ -143,4 +216,86 @@ nav a:hover {
 .weather p {
 	color: #51436b;
 	font-weight: bold;
+	padding-top: 10px;
 }
+
+/**********************Start Min-width 800px *******************/
+@media (min-width: 800px) {
+/* DESKTOP NAV */
+.mobile {
+	display: none;
+}
+
+.desktop {
+	display: flex;
+	padding-left: 10%;
+	padding-right: 10%;
+	align-items: center;
+}
+
+.desktop img {
+	padding-right: 30px;
+}
+
+.desktop ul li a {
+	font-size: 1.5rem;
+	padding: 0 90px;
+	display: inline;
+}
+
+/* HOME - ICONS */
+.icon-section {
+	display: flex;
+	justify-content: space-around;
+}
+
+}
+
+/**********************End Min-width 800px *******************/
+
+
+/**********************Start Min-width 1000px *******************/
+@media (min-width: 1000px) {
+
+/* HOME  */
+
+.hero-title {
+	font-size: 3.1rem;
+}
+
+.hero {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.intro {
+	display: flex;
+	justify-content:center;
+	padding-bottom: 0;
+}
+
+.blurb {
+	max-width: 500px;
+	padding-right: 30px;
+	padding-top: 50px;
+}
+
+.plant-img {
+	padding-top: 0px;
+}
+
+}
+/**********************End Min-width 1000px *******************/
+
+
+/**********************Start Min-width 1600px *******************/
+@media (min-width: 1600px) {
+#container {
+	max-width: 1700px;
+	margin: auto;
+	border: 1px solid #d3e0e5;
+	}
+
+}
+
+/**********************End Min-width 1600px *******************/
