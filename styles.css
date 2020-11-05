@@ -219,6 +219,72 @@ nav a:hover {
 	padding-top: 10px;
 }
 
+
+/*============================================
+*
+*         FOREST
+*
+*
+*===========================================*/
+
+.page-title {
+	text-align: left;
+	color: #00506d;
+}
+
+.forest-hero {
+background-color: #00506d;
+background-image: url(images/trees.jpg);
+background-size: cover;
+padding-top: 60px;
+padding-bottom: 60px;
+}
+
+.forest-intro {
+	text-align: center;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.forest-intro h2 {
+	padding-bottom: 15px;
+}
+
+.forest-intro p {
+	font-size: 1.2rem;
+	line-height: 25px;
+	color: #5c8641;
+	font-weight: bold;
+}
+
+.phases {
+	background-color: #d3e0e5;
+}
+
+.phases img {
+	border: 3px solid #5c8641;
+	padding-top: 0;
+}
+
+.phases h2 {
+	padding-bottom: 15px;
+}
+
+.read-more {
+	margin-bottom: 20px;
+}
+
+
+/**********************Start Min-width 700px *******************/
+@media (min-width: 700px) {
+h1 {
+	font-size: 2.8rem;
+}
+
+}
+/**********************End Min-width 700px *******************/
+
+
 /**********************Start Min-width 800px *******************/
 @media (min-width: 800px) {
 /* DESKTOP NAV */
@@ -228,9 +294,8 @@ nav a:hover {
 
 .desktop {
 	display: flex;
-	padding-left: 10%;
-	padding-right: 10%;
 	align-items: center;
+	padding-left: 2%;
 }
 
 .desktop img {
@@ -239,7 +304,7 @@ nav a:hover {
 
 .desktop ul li a {
 	font-size: 1.5rem;
-	padding: 0 90px;
+	padding: 40px;
 	display: inline;
 }
 
@@ -249,8 +314,16 @@ nav a:hover {
 	justify-content: space-around;
 }
 
+.phases {
+	display: flex;
+	justify-content: space-between;
 }
 
+.open-up .open-two {
+	max-width: 300px;
+}
+
+}
 /**********************End Min-width 800px *******************/
 
 
@@ -260,6 +333,10 @@ nav a:hover {
 /* HOME  */
 
 .hero-title {
+	font-size: 3.1rem;
+}
+
+.page-title {
 	font-size: 3.1rem;
 }
 
@@ -284,18 +361,22 @@ nav a:hover {
 	padding-top: 0px;
 }
 
+.forest-intro {
+	padding-left: 25%;
+	padding-right: 25%;
+}
+
 }
 /**********************End Min-width 1000px *******************/
 
 
-/**********************Start Min-width 1600px *******************/
-@media (min-width: 1600px) {
+/**********************Start Min-width 1700px *******************/
+@media (min-width: 1700px) {
 #container {
 	max-width: 1700px;
 	margin: auto;
 	border: 1px solid #d3e0e5;
-	}
-
 }
 
+}
 /**********************End Min-width 1600px *******************/

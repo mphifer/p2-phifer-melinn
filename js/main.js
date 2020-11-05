@@ -24,25 +24,27 @@ var onHover = document.getElementsByClassName('main-menu-labels');
 var showMenu = document.getElementsByClassName('sub-menu');
 
 
-function openOne() {
+function openMenu() {
   showMenu[0].classList.toggle('show');
 }
 
-onHover[0].addEventListener('mouseenter', openOne);
-onHover[0].addEventListener('mouseleave', openOne);
+onHover[0].addEventListener('mouseenter', openMenu);
+onHover[0].addEventListener('mouseleave', openMenu);
 
 
-function openTwo() {
-  showMenu[1].classList.toggle('show');
-}
+//Read more
+var newPara = document.createElement("p")
+newPara.innerHTML = "We have new mulch near the front gate, next to the Wildflower Meadow, waterview butterfly garden, and at the end the Pine Forest.We will complete the mulch in the Wildflower Meadow. Finished the mulching of the Pine Forest. Weeded south of the waterview Butterfly Garden"
+document.getElementById("button1").addEventListener("click",
+  function() {
+    document.getElementById("open-up").appendChild(newPara);
+  }, false
+);
 
-onHover[1].addEventListener('mouseenter', openTwo);
-onHover[1].addEventListener('mouseleave', openTwo);
-
-
-function openThree() {
-  showMenu[2].classList.toggle('show');
-}
-
-onHover[2].addEventListener('mouseenter', openThree);
-onHover[2].addEventListener('mouseleave', openThree);
+var secondPara = document.createElement("p")
+secondPara.innerHTML = "We have new mulch near the front gate, next to the Wildflower Meadow, waterview butterfly garden, and at the end the Pine Forest.We will complete the mulch in the Wildflower Meadow. Finished the mulching of the Pine Forest. Weeded south of the waterview Butterfly Garden"
+document.getElementById("button2").addEventListener("click",
+  function() {
+    document.getElementById("open-two").appendChild(secondPara);
+  }, false
+);
