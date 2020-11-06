@@ -113,7 +113,7 @@ nav ul a {
 	text-transform: uppercase;
 	color: #c6ba41;
 	padding: 0 20px;
-	font-size: 1.2rem;
+	font-size: 1.4rem;
 }
 
 nav ul {
@@ -295,17 +295,47 @@ h1 {
 .desktop {
 	display: flex;
 	align-items: center;
+	justify-content:space-between;
+	align-content: center;
 	padding-left: 2%;
-}
-
-.desktop img {
-	padding-right: 30px;
+	padding-right: 20%;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 .desktop ul li a {
-	font-size: 1.5rem;
+	font-size: 1.8rem;
 	padding: 40px;
-	display: inline;
+}
+
+.desktop a:hover {
+	color: #d3e0e5;
+}
+
+/* SUB MENU DESKTOP*/
+.nav-menu li {
+  padding: 10px;
+	font-size: 1.3rem;
+	color: #d3e0e5;
+}
+
+.nav-menu li:hover {
+	color: #c6ba41;
+}
+
+/* HIDDEN Sub Menu */
+.hide {
+  height: 0;
+  overflow: hidden;
+  transition: all 1s ease-out;
+	display:block;
+}
+
+/* SHOW Sub Menu */
+.show-desktop {
+  height: 7rem;
+  transition: all 1s ease-in;
+	display:block;
 }
 
 /* HOME - ICONS */

@@ -23,13 +23,24 @@ xmlhttp.send();
 var onHover = document.getElementsByClassName('main-menu-labels');
 var showMenu = document.getElementsByClassName('sub-menu');
 
-
 function openMenu() {
   showMenu[0].classList.toggle('show');
 }
 
 onHover[0].addEventListener('mouseenter', openMenu);
 onHover[0].addEventListener('mouseleave', openMenu);
+
+
+var onHove = document.getElementsByClassName('desktop-labels');
+var showDesk = document.getElementsByClassName('nav-menu');
+
+
+function openDesktop() {
+  showDesk[0].classList.toggle('show-desktop');
+}
+
+onHove[0].addEventListener('mouseenter', openDesktop);
+onHove[0].addEventListener('mouseleave', openDesktop);
 
 
 //Read more
