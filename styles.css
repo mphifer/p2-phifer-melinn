@@ -65,13 +65,17 @@ p {
 	font-weight: bold;
   padding-left: 12px;
 	padding-right: 12px;
-	padding-top: 10px;
+	padding-top: 13px;
 	padding-bottom: 5px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
 	margin-top: 10px;
 	text-transform: uppercase;
+}
+
+.button p {
+	line-height: 0;
 }
 
 .button:hover {
@@ -233,11 +237,11 @@ nav a:hover {
 }
 
 .forest-hero {
-background-color: #00506d;
-background-image: url(images/trees.jpg);
-background-size: cover;
-padding-top: 60px;
-padding-bottom: 60px;
+	background-color: #00506d;
+	background-image: url(images/trees.jpg);
+	background-size: cover;
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 
 .forest-intro {
@@ -274,11 +278,75 @@ padding-bottom: 60px;
 	margin-bottom: 20px;
 }
 
+/* ACCORDION */
+
+.faq {
+	background-color: #6e97aa;
+}
+
+.faq h2{
+	padding-bottom: 15px
+}
+
+button.accordion {
+	margin-bottom: 3px;
+	padding-bottom: 10px;
+}
+
+.accordion {
+  background-color: #00506d;
+  color: #444;
+  cursor: pointer;
+  padding: 20px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+	font-size: 1rem;
+	color: #c6ba41;
+	font-weight: bold;
+	font-family: 'Manjari', sans-serif;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: #d3e0e5;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.panel p {
+	padding: 10px;
+}
+
+.active, .accordion:hover {
+  background-color: #5c8641;
+	color: #d3e0e5;
+}
+
+.accordion:after {
+  content: '\02795';
+  font-size: 16px;
+  color: #c6ba41;
+  float: right;
+  margin-left: 1%;
+}
+
+.active:after {
+  content: "\2796";
+	color: #c6ba41;
+}
 
 /**********************Start Min-width 700px *******************/
 @media (min-width: 700px) {
 h1 {
 	font-size: 2.8rem;
+}
+
+.accordion {
+	font-size: 1.2rem;
 }
 
 }
