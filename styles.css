@@ -10,11 +10,12 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 
 /* Colors
 NAVY #00506d
-GRAY BLUE #6e97aa
-LIGHT BLUE #d3e0e5
-LIME GREEN #c6ba41
-DARK GREEN #5c8641
-ORANGE #dd671e */
+GRAY BLUE #6e97aa;
+LIGHT BLUE #d3e0e5;
+LIME GREEN #c6ba41;
+DARK GREEN #5c8641;
+ORANGE #dd671e;
+*/
 
 /*============================================
 *
@@ -34,7 +35,6 @@ h1 {
 	color: #d3e0e5;
 	font-size: 2rem;
 	letter-spacing: 1px;
-
 }
 
 h2 {
@@ -97,6 +97,7 @@ footer p {
 	line-height: 30px;
 }
 
+/* MOBILE NAV */
 .desktop {
 	display: none;
 }
@@ -144,7 +145,7 @@ nav a:hover {
 	color: #c6ba41;
 }
 
-/* HIDDEN Sub Menu */
+/* HIDDEN SUB MENU */
 .hidden {
   height: 0;
   overflow: hidden;
@@ -152,13 +153,12 @@ nav a:hover {
 	display:block;
 }
 
-/* SHOW Sub Menu */
+/* SHOW SUB MENU */
 .show {
   height: 7rem;
   transition: all 1s ease-in;
 	display:block;
 }
-
 
 /*============================================
 *
@@ -223,7 +223,6 @@ nav a:hover {
 	padding-top: 10px;
 }
 
-
 /*============================================
 *
 *         FOREST
@@ -261,6 +260,7 @@ nav a:hover {
 	font-weight: bold;
 }
 
+/* Phases Read More */
 .phases {
 	background-color: #d3e0e5;
 }
@@ -337,6 +337,29 @@ button.accordion {
 .active:after {
   content: "\2796";
 	color: #c6ba41;
+}
+
+/*============================================
+*
+*         VISIT US
+*
+*
+*===========================================*/
+.visit-hero {
+	background-color: #c6ba41;
+	background-size: cover;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.blurb-one p {
+	padding-bottom: 15px;
+}
+
+.img-one {
+	max-width: 100%;
+	text-align: center;
+	margin: auto;
 }
 
 /**********************Start Min-width 700px *******************/
@@ -459,13 +482,44 @@ h1 {
 	padding-top: 0px;
 }
 
+/* FOREST PAGE  */
+
 .forest-intro {
 	padding-left: 25%;
 	padding-right: 25%;
 }
 
+/* VISIT US PAGE */
+.visit-one {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding-bottom: 0;
+	padding: 0;
+}
+
+.blurb-one {
+	padding-left: 2%;
+	padding-right: 2%;
+	flex:1;
+}
+
 }
 /**********************End Min-width 1000px *******************/
+
+
+/**********************Start Min-width 1200px *******************/
+@media (min-width: 1200px) {
+
+.visit-one {
+	max-width: 1205px;
+	align-content: center;
+	justify-content: center;
+	margin: auto;
+}
+
+}
+/**********************End Min-width 1200px *******************/
 
 
 /**********************Start Min-width 1700px *******************/
