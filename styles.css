@@ -54,11 +54,6 @@ p {
 	font-weight: 400;
 }
 
-.orange {
-	color: #dd671e;
-	font-weight: bold;
-}
-
 .button {
 	background-color: #dd671e;
   color: white;
@@ -172,8 +167,8 @@ nav a:hover {
 	background-color: #00506d;
 	background-image: url(images/hero.jpg);
 	background-size: cover;
-	padding-top: 80px;
-	padding-bottom: 80px;
+	padding-top: 90px;
+	padding-bottom: 90px;
 }
 
 /* INTRO SECTION */
@@ -209,6 +204,12 @@ nav a:hover {
 
 .icon-section {
 	text-align: center;
+}
+
+/* icon text */
+.orange {
+	color: #dd671e;
+	font-weight: bold;
 }
 
 /* WEATHER SECTION */
@@ -268,6 +269,8 @@ nav a:hover {
 .phases img {
 	border: 3px solid #5c8641;
 	padding-top: 0;
+	/* margin: auto;
+	/* max-width: 100%; */ */
 }
 
 .phases h2 {
@@ -339,9 +342,13 @@ button.accordion {
 	color: #c6ba41;
 }
 
+button.accordion.active::after {
+	color: #c6ba41;
+}
+
 /*============================================
 *
-*         VISIT US
+*         VISIT
 *
 *
 *===========================================*/
@@ -360,6 +367,20 @@ button.accordion {
 	max-width: 100%;
 	text-align: center;
 	margin: auto;
+}
+
+.visit-one {
+	padding-top: 0;
+}
+
+.images-center {
+	max-width: 600px;
+	margin: auto;
+}
+
+/* hike heading */
+.second-h2 {
+	padding-top: 15px;
 }
 
 /**********************Start Min-width 700px *******************/
@@ -435,24 +456,27 @@ h1 {
 	justify-content: space-around;
 }
 
-.phases {
-	display: flex;
-	justify-content: space-between;
-}
-
-.open-up .open-two {
-	max-width: 300px;
-}
-
 }
 /**********************End Min-width 800px *******************/
+
+
+/**********************Start Max-width 800px *******************/
+
+@media (max-width: 1000px) {
+
+.phases img {
+	margin: auto;
+	max-width: 100%;
+}
+
+}
+/**********************End Max-width 1000px *******************/
 
 
 /**********************Start Min-width 1000px *******************/
 @media (min-width: 1000px) {
 
 /* HOME  */
-
 .hero-title {
 	font-size: 3.1rem;
 }
@@ -483,25 +507,27 @@ h1 {
 }
 
 /* FOREST PAGE  */
-
 .forest-intro {
 	padding-left: 25%;
 	padding-right: 25%;
 }
 
-/* VISIT US PAGE */
-.visit-one {
+.phases {
 	display: flex;
-	align-items: center;
 	justify-content: space-around;
-	padding-bottom: 0;
-	padding: 0;
+	align-content: center;
 }
 
-.blurb-one {
-	padding-left: 2%;
-	padding-right: 2%;
-	flex:1;
+.contain {
+	padding: 1%;
+}
+
+.contain img {
+max-width: 450px;
+}
+
+#open-up, #open-two {
+	max-width: 450px;
 }
 
 }
@@ -511,21 +537,53 @@ h1 {
 /**********************Start Min-width 1200px *******************/
 @media (min-width: 1200px) {
 
+/* VISIT US PAGE */
 .visit-one {
-	max-width: 1205px;
+	display: flex;
+	align-items: center;
 	align-content: center;
 	justify-content: center;
 	margin: auto;
+	padding-bottom: 0;
+	padding: 0;
+	max-width: 1205px;
+}
+
+.blurb-one {
+	padding-left: 2%;
+	padding-right: 2%;
+	flex:1;
+}
+
+/* hike heading */
+.second-h2 {
+	padding-top: 0px;
 }
 
 }
 /**********************End Min-width 1200px *******************/
 
 
-/**********************Start Min-width 1700px *******************/
-@media (min-width: 1700px) {
+/**********************Start Min-width 1300px *******************/
+@media (min-width: 1300px) {
+	
+.contain img {
+	max-width: 600px;
+}
+
+#open-up, #open-two {
+	max-width: 600px;
+}
+
+}
+/**********************End Min-width 1300px *******************/
+
+
+/**********************Start Min-width 1600px *******************/
+@media (min-width: 1600px) {
+
 #container {
-	max-width: 1700px;
+	max-width: 1600px;
 	margin: auto;
 	border: 1px solid #d3e0e5;
 }
