@@ -269,8 +269,6 @@ nav a:hover {
 .phases img {
 	border: 3px solid #5c8641;
 	padding-top: 0;
-	/* margin: auto;
-	/* max-width: 100%; */ */
 }
 
 .phases h2 {
@@ -296,9 +294,13 @@ button.accordion {
 	padding-bottom: 10px;
 }
 
+faq button.accordion {
+	color: white;
+}
+
 .accordion {
   background-color: #00506d;
-  color: #444;
+  color: white;
   cursor: pointer;
   padding: 20px;
   width: 100%;
@@ -460,8 +462,7 @@ h1 {
 /**********************End Min-width 800px *******************/
 
 
-/**********************Start Max-width 800px *******************/
-
+/**********************Start Max-width 1000px *******************/
 @media (max-width: 1000px) {
 
 .phases img {
@@ -566,7 +567,7 @@ max-width: 450px;
 
 /**********************Start Min-width 1300px *******************/
 @media (min-width: 1300px) {
-	
+
 .contain img {
 	max-width: 600px;
 }
