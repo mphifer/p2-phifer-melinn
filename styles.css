@@ -331,20 +331,17 @@ faq button.accordion {
 }
 
 .accordion:after {
-  content: '\02795';
-  font-size: 16px;
+  content: "+";
+  font-size: 26px;
   color: #c6ba41;
   float: right;
   margin-left: 1%;
 }
 
 .active:after {
-  content: "\2796";
-	color: #c6ba41;
-}
-
-button.accordion.active::after {
-	color: #c6ba41;
+  content: "-";
+	font-size: 26px;
+  color: #00506d;
 }
 
 /*============================================
@@ -390,8 +387,17 @@ h1 {
 	font-size: 2.8rem;
 }
 
+/* ACCORDION */
 .accordion {
 	font-size: 1.2rem;
+}
+/* + */
+.accordion:after {
+  font-size: 30px;
+}
+/* - */
+.active:after {
+	font-size: 30px;
 }
 
 }
